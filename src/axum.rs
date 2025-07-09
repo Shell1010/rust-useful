@@ -29,7 +29,7 @@ impl FromPerson for Age {
 }
 
 pub trait Handler<T> {
-    pub fn call(self, person: Person);
+    fn call(self, person: Person);
 }
 
 impl<F, T> Handler<T> for F
