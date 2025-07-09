@@ -43,7 +43,7 @@ where
 }
 
 
-impl<F, T1, T2> Handler<T1, T2> for F
+impl<F, T1, T2> Handler<(T1, T2)> for F
 where
     F: Fn(T1, T2),
     T1: FromPerson,
